@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/mocha",
     "start": "npm run build:live",
-    "build": "./node_modules/tsc",
+    "build": "tsc",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
   },
   "repository": {
@@ -28,5 +28,9 @@
     "nodemon": "1.12.1",
     "ts-node": "3.3.0",
     "typescript": "2.6.2"
+  },
+  "dependencies": {
+    "@types/express": "4.0.39",
+    "express": "4.16.2"
   }
 }
