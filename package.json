@@ -1,0 +1,32 @@
+{
+  "name": "commandandcontrol",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha",
+    "start": "npm run build:live",
+    "build": "./node_modules/tsc",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LockedUpIOT/CommandAndControl.git"
+  },
+  "author": "Thomas Ankcorn",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/LockedUpIOT/CommandAndControl/issues"
+  },
+  "homepage": "https://github.com/LockedUpIOT/CommandAndControl#readme",
+  "devDependencies": {
+    "@types/chai": "4.0.5",
+    "@types/mocha": "2.2.44",
+    "@types/node": "8.0.53",
+    "chai": "4.1.2",
+    "mocha": "4.0.1",
+    "nodemon": "1.12.1",
+    "ts-node": "3.3.0",
+    "typescript": "2.6.2"
+  }
+}
